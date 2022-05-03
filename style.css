@@ -13,39 +13,41 @@ body {
   color: black;
   text-decoration: none;
 }
-body header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 10%;
-  background-color: white;
-}
-body header .logo {
-  cursor: pointer;
-}
-body header .nav__links {
-  list-style: none;
-}
-body header .nav__links li {
-  display: inline;
-  padding: 0px 20px;
-}
-body header .nav__links li a {
-  transition: all 0.3 ease 0s;
-}
-body header .nav__links li a:hover {
-  color: #BED62F;
-}
-body header button {
-  padding: 9px 25px;
-  background-color: #ffB72B;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: 0.3;
-}
-body header button:hover {
-  background-color: #BED62F;
+@media screen and (min-width: 667px) {
+  body header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: white;
+  }
+  body .logo {
+    cursor: pointer;
+  }
+  body .nav__links {
+    list-style: none;
+  }
+  body .nav__links li {
+    display: inline;
+    padding: 0px 20px;
+  }
+  body .nav__links li a {
+    transition: all 0.3 ease 0s;
+  }
+  body .nav__links li a:hover {
+    color: #BED62F;
+  }
+  body button {
+    padding: 9px 25px;
+    background-color: #ffB72B;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3;
+  }
+  body button:hover {
+    background-color: #BED62F;
+  }
 }
 body footer {
   background-color: #bed62f;
