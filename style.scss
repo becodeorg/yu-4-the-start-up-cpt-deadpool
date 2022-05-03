@@ -44,9 +44,11 @@ button {
     background-color: #FFB72B;
     border: none;
     border-radius: 50px;
+
     cursor: pointer;
     transition: 0.3;
-    button:hover {
-        color: #BED62F;
-        }
 }
+
+button:hover {
+    color: #BED62F;
+    }
