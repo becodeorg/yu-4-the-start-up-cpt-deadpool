@@ -41,14 +41,13 @@ header {
 
 button {
     padding: 9px 25px;
-    background-color: #FFB72B;
+    background-color: white;
     border: none;
     border-radius: 50px;
 
     cursor: pointer;
     transition: 0.3;
-}
-
-button:hover {
-    color: #BED62F;
     }
+    button:hover {
+        background-color: #BED62F;
+            }

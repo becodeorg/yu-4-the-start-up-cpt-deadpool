@@ -41,7 +41,7 @@ header {
 
 button {
   padding: 9px 25px;
-  background-color: #FFB72B;
+  background-color: white;
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -49,5 +49,5 @@ button {
 }
 
 button:hover {
-  color: #BED62F;
+  background-color: #BED62F;
 }/*# sourceMappingURL=style.css.map */
