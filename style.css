@@ -36,29 +36,14 @@ body header .nav__links li a {
 body header .nav__links li a:hover {
   color: #BED62F;
 }
-<<<<<<< HEAD
-.nav__links button {
-=======
 body header button {
->>>>>>> 2a77b32229ce3132853ab14b7bc04f45506a394f
   padding: 9px 25px;
-  background-color: black;
+  background-color: #ffB72B;
   border: none;
   border-radius: 50px;
   cursor: pointer;
   transition: 0.3;
 }
-<<<<<<< HEAD
-.nav__links button:hover {
-  background-color: #BED62F;
-}
-
-footer {
-  background-color: #bed62f;
-}
-@media screen and (min-width: 768px) {
-  footer .flex-container {
-=======
 body header button:hover {
   background-color: #BED62F;
 }
@@ -67,59 +52,28 @@ body footer {
 }
 @media screen and (min-width: 768px) {
   body footer .flex-container {
->>>>>>> 2a77b32229ce3132853ab14b7bc04f45506a394f
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
 }
 @media screen and (max-width: 768px) {
-<<<<<<< HEAD
-  footer .flex-container {
-=======
   body footer .flex-container {
->>>>>>> 2a77b32229ce3132853ab14b7bc04f45506a394f
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
-<<<<<<< HEAD
-footer .footer-element {
-  min-width: 33%;
-  text-align: center;
-}
-footer .footer-element h4 {
-=======
 body footer .footer-element {
   min-width: 33%;
   text-align: center;
 }
 body footer .footer-element h4 {
-<<<<<<< HEAD
->>>>>>> 2a77b32229ce3132853ab14b7bc04f45506a394f
-=======
   font-weight: bold;
->>>>>>> 347678e2c5f3c9fafa20b5fdc2a0d157f58ad69a
   text-transform: uppercase;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-<<<<<<< HEAD
-footer .footer-element a {
-  text-decoration: none;
-  color: black;
-}
-footer .footer-element a:hover {
-  color: white;
-  text-decoration: none;
-}
-footer .footer-element ul {
-  list-style: none;
-  padding: 0.5rem;
-}
-footer .footer-element .fa {
-=======
 body footer .footer-element a {
   text-decoration: none;
   color: black;
@@ -136,11 +90,7 @@ body footer .footer-element #map {
   display: inline-block;
 }
 body footer .footer-element .fa {
-<<<<<<< HEAD
->>>>>>> 2a77b32229ce3132853ab14b7bc04f45506a394f
-=======
   padding: 0.5rem;
->>>>>>> 347678e2c5f3c9fafa20b5fdc2a0d157f58ad69a
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   margin-bottom: 2.5rem;
