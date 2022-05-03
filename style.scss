@@ -7,7 +7,7 @@
     padding: 0; 
 }
 
-li, a, button {
+body {
     font-family: "montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -79,6 +79,8 @@ footer {
 
         h4 {
         text-transform: uppercase;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
         }
 
         a {
