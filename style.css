@@ -42,13 +42,14 @@ header {
 
 button {
   padding: 9px 25px;
-  background-color: #FFB72B;
+  background-color: white;
   border: none;
   border-radius: 50px;
   cursor: pointer;
   transition: 0.3;
 }
-button button:hover {
+
+button:hover {
   background-color: #BED62F;
 }
 

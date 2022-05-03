@@ -43,13 +43,15 @@ header {
 
 button {
     padding: 9px 25px;
-    background-color: #FFB72B;
+    background-color: white;
     border: none;
     border-radius: 50px;
     cursor: pointer;
     transition: 0.3;
+    }
     button:hover {
         background-color: #BED62F;
+<<<<<<< HEAD
         }
 }
 
@@ -104,3 +106,6 @@ footer {
         }
     }
 }
+=======
+            }
+>>>>>>> c36af3272f68cdb69956ad0b8decb5af1535a4e2
