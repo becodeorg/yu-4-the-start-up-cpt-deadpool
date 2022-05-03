@@ -63,6 +63,14 @@ header {
       flex-direction: column;
   }   
  }   
+ 
+ @media screen and (max-width: 390) {
+     header {
+         display: flex;
+         flex-direction: column;
+         background-color: red;
+     }
+ }
 
     
 
