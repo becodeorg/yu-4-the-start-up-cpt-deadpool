@@ -90,6 +90,8 @@ body footer .footer-element #map {
   display: inline-block;
 }
 body footer .footer-element .fa {
+  padding: 0.5rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+  margin-bottom: 2.5rem;
 }/*# sourceMappingURL=style.css.map */
