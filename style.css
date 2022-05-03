@@ -47,6 +47,12 @@ body header button {
 body header button:hover {
   background-color: #BED62F;
 }
+@media screen and (max-width: 768px) {
+  body .nav__links {
+    display: flex;
+    flex-direction: column;
+  }
+}
 body footer {
   background-color: #bed62f;
 }
