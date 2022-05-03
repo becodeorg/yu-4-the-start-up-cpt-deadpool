@@ -14,7 +14,6 @@ body {
     color: black;
     text-decoration: none;
 
-
 header {
     display: flex;
     justify-content: space-between;
@@ -22,19 +21,21 @@ header {
     padding: 30px 10%;
     background-color: white;
 
-
     .logo{  
         cursor: pointer;
     }
 
     .nav__links {
         list-style: none;
+            
         li {
             display: inline;
             padding: 0px 20px;
-            a {
-                transition: all 0.3 ease 0s;
+                
+        a {
+            transition: all 0.3 ease 0s;
             }
+
             a:hover {
                 color: #BED62F;
             }
@@ -49,11 +50,11 @@ header {
         cursor: pointer;
         transition: 0.3;
 
-    button:hover {
-        background-color: #BED62F;
+        button:hover {
+            background-color: #BED62F;
         }
     }
-}
+}   
 
 footer {
     background-color: #bed62f;
@@ -105,9 +106,5 @@ footer {
         margin-right: 0.5rem;
         }
     }
-}}
-
-
-            
-
-
+}
+}
