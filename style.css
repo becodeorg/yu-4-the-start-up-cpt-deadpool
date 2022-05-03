@@ -13,34 +13,30 @@ body {
   color: black;
   text-decoration: none;
 }
-
-header {
+body header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 10%;
   background-color: white;
 }
-
-.logo {
+body header .logo {
   cursor: pointer;
 }
-
-.nav__links {
+body header .nav__links {
   list-style: none;
 }
-.nav__links li {
+body header .nav__links li {
   display: inline;
   padding: 0px 20px;
 }
-.nav__links li a {
+body header .nav__links li a {
   transition: all 0.3 ease 0s;
 }
-.nav__links li a:hover {
+body header .nav__links li a:hover {
   color: #BED62F;
 }
-
-button {
+body header button {
   padding: 9px 25px;
   background-color: white;
   border: none;
@@ -48,50 +44,48 @@ button {
   cursor: pointer;
   transition: 0.3;
 }
-
-button:hover {
+body header button button:hover {
   background-color: #BED62F;
 }
-
-footer {
+body footer {
   background-color: #bed62f;
 }
 @media screen and (min-width: 768px) {
-  footer .flex-container {
+  body footer .flex-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
 }
 @media screen and (max-width: 768px) {
-  footer .flex-container {
+  body footer .flex-container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
-footer .footer-element {
+body footer .footer-element {
   min-width: 33%;
   text-align: center;
 }
-footer .footer-element h4 {
+body footer .footer-element h4 {
   text-transform: uppercase;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-footer .footer-element a {
+body footer .footer-element a {
   text-decoration: none;
   color: black;
 }
-footer .footer-element a:hover {
+body footer .footer-element a:hover {
   color: white;
   text-decoration: none;
 }
-footer .footer-element ul {
+body footer .footer-element ul {
   list-style: none;
   padding: 0.5rem;
 }
-footer .footer-element .fa {
+body footer .footer-element .fa {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }/*# sourceMappingURL=style.css.map */
