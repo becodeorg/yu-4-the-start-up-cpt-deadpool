@@ -69,6 +69,7 @@ body footer .footer-element {
   text-align: center;
 }
 body footer .footer-element h4 {
+  font-weight: bold;
   text-transform: uppercase;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -84,6 +85,9 @@ body footer .footer-element a:hover {
 body footer .footer-element ul {
   list-style: none;
   padding: 0.5rem;
+}
+body footer .footer-element #map {
+  display: inline-block;
 }
 body footer .footer-element .fa {
   margin-left: 0.5rem;
