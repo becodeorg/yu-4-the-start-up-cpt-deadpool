@@ -53,6 +53,13 @@ body header button:hover {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 390) {
+  body header {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+  }
+}
 body footer {
   background-color: #bed62f;
 }
