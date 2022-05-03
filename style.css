@@ -38,13 +38,13 @@ body header .nav__links li a:hover {
 }
 body header button {
   padding: 9px 25px;
-  background-color: white;
+  background-color: black;
   border: none;
   border-radius: 50px;
   cursor: pointer;
   transition: 0.3;
 }
-body header button button:hover {
+body header button:hover {
   background-color: #BED62F;
 }
 body footer {

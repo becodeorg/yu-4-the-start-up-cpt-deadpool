@@ -44,17 +44,18 @@ header {
 
     button {
         padding: 9px 25px;
-        background-color: white;
+        background-color: black;
         border: none;
         border-radius: 50px;
         cursor: pointer;
         transition: 0.3;
+    }
 
         button:hover {
             background-color: #BED62F;
         }
     }
-}   
+  
 
 footer {
     background-color: #bed62f;
@@ -106,5 +107,7 @@ footer {
         margin-right: 0.5rem;
         }
     }
-}
-}
+}}
+
+        
+
