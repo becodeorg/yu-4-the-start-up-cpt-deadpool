@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oleo+Script&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -49,4 +50,45 @@ button {
 }
 button button:hover {
   background-color: #BED62F;
+}
+
+footer {
+  background-color: #bed62f;
+}
+@media screen and (min-width: 768px) {
+  footer .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+footer .footer-element {
+  min-width: 33%;
+  text-align: center;
+}
+footer .footer-element h4 {
+  text-transform: uppercase;
+}
+footer .footer-element a {
+  text-decoration: none;
+  color: black;
+}
+footer .footer-element a:hover {
+  color: white;
+  text-decoration: none;
+}
+footer .footer-element ul {
+  list-style: none;
+  padding: 0.5rem;
+}
+footer .footer-element .fa {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }/*# sourceMappingURL=style.css.map */
