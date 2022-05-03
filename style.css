@@ -38,7 +38,7 @@ body header .nav__links li a:hover {
 }
 body header button {
   padding: 9px 25px;
-  background-color: black;
+  background-color: #ffB72B;
   border: none;
   border-radius: 50px;
   cursor: pointer;
