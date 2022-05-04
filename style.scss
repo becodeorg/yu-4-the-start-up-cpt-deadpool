@@ -43,6 +43,7 @@ header {
         }
     }
 
+
     button {
         padding: 9px 25px;
         background-color: #ffB72B;
@@ -57,18 +58,38 @@ header {
         }
     }
 
- @media screen and (max-width: 768px) {
-  .nav__links {
-      display: flex;
-      flex-direction: column;
-  }   
- }   
- 
-@media screen and (max-width: 390px) {
-    header {
-        display: flex;
+@media only screen and (max-width: 768px) {
+    .nav__links {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
         flex-direction: column;
-        background-color: white;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        margin: 2.5rem 0;
+    .nav__links.active {
+        left: 0;
+    }    
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translate(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translate(-8px) rotate(-45deg);
     }
 }
 
@@ -144,6 +165,12 @@ footer {
         margin-bottom: 2.5rem;
         }
     }
+
+    #copyright {
+        text-align: center;
+        font-size: 0.8rem;
+        padding: 1rem;
+    }
 }
 
 .product-page {
@@ -158,40 +185,17 @@ footer {
     }
 
     .card {
-        max-width: 30%;
+        max-width: 33%;
         margin: 0.5rem;
         text-align: center;
         padding-bottom: 1rem;
-    }
-
-    @media screen and (min-width: 1500px) {
-        
-        width: 100%;
-                
-        .flex-container {
-            width: 1400px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
-
-    @media screen and (max-width: 600px) {
-        .flex-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .card {
-            max-width: 75%;
-        }
     }
 
     .product-photo {
         position: relative;
 
         img {
-        width: 100%;
+        width: 300px;
         height: 15rem;
         object-fit: cover;
         border-radius: 0.5rem;
@@ -243,6 +247,35 @@ footer {
         }
         a:hover {
         color: #BED62f;
+        }
+    }
+
+    @media screen and (min-width: 1500px) {
+        
+        width: 100%;
+                
+        .flex-container {
+            width: 1400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card {
+            max-width: 75%;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .product-photo img{
+            width: 250px;
         }
     }
 }
