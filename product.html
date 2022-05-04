@@ -11,25 +11,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
-            /* Image change */
-    .image_off, #dates:hover .image_on{
+    
+    /* Image change */
+    .image_off, #img-change:hover .image_on{
             display:none
     }
-    .image_on, #dates:hover .image_off{
+    .image_on, #img-change:hover .image_off{
         display:block
     }
-    .image_off, #apples:hover .image_on{
-            display:none
-    }
-    .image_on, #apples:hover .image_off{
-        display:block
-    }
-    .image_off, #bananas:hover .image_on{
-            display:none
-    }
-    .image_on, #bananas:hover .image_off{
-        display:block
-    }
+
     </style>
 
 </head>
@@ -54,7 +44,7 @@
                 <div class="card">
                     <div class="product-photo">
                         <div><button id="btn-cart" type="button" class="fa fa-shopping-cart"></button></div>
-                        <a id="dates"><img class="image_on" src="assets/energy-balls.jpg" alt="energy-balls" /><img class="image_off" src="assets/dates.jpg" alt="dates" /></a>
+                        <a id="img-change"><img class="image_on" src="assets/energy-balls.jpg" alt="energy-balls" /><img class="image_off" src="assets/dates.jpg" alt="dates" /></a>
                     </div>
                     <div class="product-title">
                         <p>Energy balls</p>
@@ -68,21 +58,21 @@
                 <div class="card">
                     <div class="product-photo">
                         <div><button id="btn-cart" type="button" class="fa fa-shopping-cart"></button></div>
-                        <img src="assets/coconut-balls.jpg" alt="Product image">
+                        <a id="img-change"><img class="image_on" src="assets/coconut-balls.jpg" alt="coconut-energy-balls" /><img class="image_off" src="assets/dried-coconut.jpg" alt="dried-coconut" /></a>
                     </div>
                     <div class="product-title">
-                        <p>Coconut energy balls</p>
+                        <p>Coconut balls</p>
                     </div>
                     <div class="product-dsc">
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Dates, apples & oats covered in coconut shreds</p>
                     </div>
-                    <div class="product-price">3.99 €<span> - 5 balls</span></div>
+                    <div class="product-price">1.49 €<span> - 2 balls</span></div>
                     <a href="#">More info</a>
                 </div>
                 <div class="card">
                     <div class="product-photo">
                         <div><button id="btn-cart" type="button" class="fa fa-shopping-cart"></button></div>
-                        <a id="apples"><img class="image_on" src="assets/dried-apples.jpg" alt="dried-apples" /><img class="image_off" src="assets/old-apples.jpg" alt="old-apples" /></a>
+                        <a id="img-change"><img class="image_on" src="assets/dried-apples.jpg" alt="dried-apples" /><img class="image_off" src="assets/old-apples.jpg" alt="old-apples" /></a>
                     </div>
                     <div class="product-title">
                         <p>Dried apples</p>
@@ -96,27 +86,13 @@
                 <div class="card">
                     <div class="product-photo">
                         <div><button id="btn-cart" type="button" class="fa fa-shopping-cart"></button></div>
-                        <a id="bananas"><img class="image_on" src="assets/banana-chips.jpg" alt="banana-chips" /><img class="image_off" src="assets/old-bananas.jpg" alt="old-bananas" /></a>
-                    </div>
-                    <div class="product-title">
-                        <p>Banana chips</p>
-                    </div>
-                    <div class="product-dsc">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <div class="product-price">2.99 €<span> - 300 g</span></div>
-                    <a href="#">More info</a>
-                </div>
-                <div class="card">
-                    <div class="product-photo">
-                        <div><button id="btn-cart" type="button" class="fa fa-shopping-cart"></button></div>
-                        <img src="assets/fruit-leather.jpg" alt="Product image">
+                        <a id="img-change"><img class="image_on" src="assets/fruit-leather.jpg" alt="fruit-rolls" /><img class="image_off" src="assets/strawberry.jpg" alt="strawberry" /></a>
                     </div>
                     <div class="product-title">
                         <p>Fruit rolls</p>
                     </div>
                     <div class="product-dsc">
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Chewy dehydrated fruit mix</p>
                     </div>
                     <div class="product-price">3.49 €<span> - 5 rolls</span></div>
                     <a href="#">More info</a>
@@ -124,21 +100,21 @@
                 <div class="card">
                     <div class="product-photo">
                         <div><button id="btn-cart" type="button" class="fa fa-shopping-cart"></button></div>
-                        <img src="assets/dried-tomatoes.jpg" alt="Product image">
+                        <a id="img-change"><img class="image_on" src="assets/banana-chips.jpg" alt="banana-chips" /><img class="image_off" src="assets/old-bananas.jpg" alt="old-bananas" /></a>
                     </div>
                     <div class="product-title">
-                        <p>Dried tomatoes</p>
+                        <p>Banana chips</p>
                     </div>
                     <div class="product-dsc">
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Fried in coconut oil, no sugar/salt added</p>
                     </div>
-                    <div class="product-price">2.99 €<span> - 200 g</span></div>
+                    <div class="product-price">2.99 €<span> - 300 g</span></div>
                     <a href="#">More info</a>
                 </div>
                 <div class="card">
                     <div class="product-photo">
                         <div><button id="btn-cart" type="button" class="fa fa-shopping-cart"></button></div>
-                        <img src="assets/veggie-crisps.jpg" alt="Product image">
+                        <a id="img-change"><img class="image_on" src="assets/veggie-crisps.jpg" alt="veggie-crisps" /><img class="image_off" src="assets/root-veggies.jpg" alt="root-vegetables" /></a>
                     </div>
                     <div class="product-title">
                         <p>Veggie chips</p>
@@ -146,19 +122,19 @@
                     <div class="product-dsc">
                         <p>Lorem ipsum dolor sit amet.</p>
                     </div>
-                    <div class="product-price">2.99 €<span> - 300 g</span></div>
+                    <div class="product-price">2.99 €<span> - 200 g</span></div>
                     <a href="#">More info</a>
                 </div> 
                 <div class="card">
                     <div class="product-photo">
                         <div><button id="btn-cart" type="button" class="fa fa-shopping-cart"></button></div>
-                        <img src="assets/bread-chips.jpg" alt="Product image">
+                        <a id="img-change"><img class="image_on" src="assets/bread-chips.jpg" alt="bread-chips" /><img class="image_off" src="assets/old-bread.jpg" alt="old-bread" /></a>
                     </div>
                     <div class="product-title">
                         <p>Bread chips</p>
                     </div>
                     <div class="product-dsc">
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Ovenbaked bread chips with salt</p>
                     </div>
                     <div class="product-price">2.99 €<span> - 350 g</span></div>
                     <a href="#">More info</a>
@@ -166,41 +142,27 @@
                 <div class="card">
                     <div class="product-photo">
                         <div><button id="btn-cart" type="button" class="fa fa-shopping-cart"></button></div>
-                        <img src="assets/veggie-spread.jpg" alt="Product image">
+                        <a id="img-change"><img class="image_on" src="assets/veggie-spread.jpg" alt="veggie-spread" /><img class="image_off" src="assets/old-eggplant.jpg" alt="old-eggplant" /></a>
                     </div>
                     <div class="product-title">
                         <p>Veggie spread</p>
                     </div>
                     <div class="product-dsc">
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Chickpeas & eggplant</p>
                     </div>
-                    <div class="product-price">3.99 €<span> - 100 g</span></div>
+                    <div class="product-price">2.99 €<span> - 100 g</span></div>
                     <a href="#">More info</a>
                 </div>
                 <div class="card">
                     <div class="product-photo">
                         <div><button id="btn-cart" type="button" class="fa fa-shopping-cart"></button></div>
-                        <img src="assets/pickled-veggies.jpg" alt="Product image">
+                        <a id="img-change"><img class="image_on" src="assets/tomato-chutney.jpg" alt="tomato-chutney" /><img class="image_off" src="assets/old-tomato.jpg" alt="old-tomato" /></a>
                     </div>
                     <div class="product-title">
-                        <p>Pickled veggies</p>
+                        <p>Tomato chutney</p>
                     </div>
                     <div class="product-dsc">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <div class="product-price">2.49 €<span> - 250 g</span></div>
-                    <a href="#">More info</a>
-                </div>
-                <div class="card">
-                    <div class="product-photo">
-                        <div><button id="btn-cart" type="button" class="fa fa-shopping-cart"></button></div>
-                        <img src="assets/forestberry-jam.jpg" alt="Product image">
-                    </div>
-                    <div class="product-title">
-                        <p>Forest berry jam</p>
-                    </div>
-                    <div class="product-dsc">
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Tomato chutney with onion & garlic</p>
                     </div>
                     <div class="product-price">2.99 €<span> - 250 g</span></div>
                     <a href="#">More info</a>
@@ -208,13 +170,41 @@
                 <div class="card">
                     <div class="product-photo">
                         <div><button id="btn-cart" type="button" class="fa fa-shopping-cart"></button></div>
-                        <img src="assets/marmelade.jpg" alt="Product image">
+                        <a id="img-change"><img class="image_on" src="assets/pickled-veggies.jpg" alt="pickled-veggies" /><img class="image_off" src="assets/old-carrots.jpg" alt="old-carrots" /></a>
+                    </div>
+                    <div class="product-title">
+                        <p>Pickled veggies</p>
+                    </div>
+                    <div class="product-dsc">
+                        <p>Pickled carrots & cucumbers</p>
+                    </div>
+                    <div class="product-price">2.99 €<span> - 250 g</span></div>
+                    <a href="#">More info</a>
+                </div>
+                <div class="card">
+                    <div class="product-photo">
+                        <div><button id="btn-cart" type="button" class="fa fa-shopping-cart"></button></div>
+                        <a id="img-change"><img class="image_on" src="assets/forestberry-jam.jpg" alt="forestberry-jam" /><img class="image_off" src="assets/berries.jpg" alt="forest-berries" /></a>
+                    </div>
+                    <div class="product-title">
+                        <p>Forest berry jam</p>
+                    </div>
+                    <div class="product-dsc">
+                        <p>Vegan blackberry & raspberry jam</p>
+                    </div>
+                    <div class="product-price">2.99 €<span> - 250 g</span></div>
+                    <a href="#">More info</a>
+                </div>
+                <div class="card">
+                    <div class="product-photo">
+                        <div><button id="btn-cart" type="button" class="fa fa-shopping-cart"></button></div>
+                        <a id="img-change"><img class="image_on" src="assets/marmelade.jpg" alt="marmelade" /><img class="image_off" src="assets/old-orange.jpg" alt="old-orange" /></a>
                     </div>
                     <div class="product-title">
                         <p>Citrus jam</p>
                     </div>
                     <div class="product-dsc">
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Vegan orange & lemon jam</p>
                     </div>
                     <div class="product-price">2.99 €<span> - 250 g</span></div>
                     <a href="#">More info</a>
