@@ -146,7 +146,7 @@ footer {
     }
 }
 
-main {
+.product-page {
     .flex-container {
     display: flex;
     flex-direction: row;
@@ -155,7 +155,7 @@ main {
     margin-top: 1rem;
     margin-bottom: 1rem;
     gap: 1rem;
-}
+    }
 
     .card {
         max-width: 30%;
@@ -166,11 +166,9 @@ main {
 
     @media screen and (min-width: 1500px) {
         
-        main {
-            width: 100%;
-        }
-        
-        main .flex-container {
+        width: 100%;
+                
+        .flex-container {
             width: 1400px;
             margin-left: auto;
             margin-right: auto;
@@ -178,7 +176,7 @@ main {
     }
 
     @media screen and (max-width: 600px) {
-        main .flex-container {
+        .flex-container {
             display: flex;
             flex-direction: column;
             align-items: center;
