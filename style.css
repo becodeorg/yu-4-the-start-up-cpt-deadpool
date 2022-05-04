@@ -77,9 +77,20 @@ body footer {
     align-items: center;
   }
 }
+@media screen and (min-width: 1500px) {
+  body footer footer {
+    width: 100%;
+  }
+  body footer footer .flex-container {
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 body footer .footer-element {
   min-width: 33%;
   text-align: center;
+  margin-top: 0.5rem;
 }
 body footer .footer-element h4 {
   font-weight: bold;
@@ -107,4 +118,88 @@ body footer .footer-element .fa {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   margin-bottom: 2.5rem;
+}
+body .product-page .flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+body .product-page .card {
+  max-width: 30%;
+  margin: 0.5rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 1500px) {
+  body .product-page {
+    width: 100%;
+  }
+  body .product-page .flex-container {
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  body .product-page .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .product-page .card {
+    max-width: 75%;
+  }
+}
+body .product-page .product-photo {
+  position: relative;
+}
+body .product-page .product-photo img {
+  width: 100%;
+  height: 15rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.5rem;
+}
+body .product-page .product-photo div {
+  position: absolute;
+  bottom: -1rem;
+  right: 1rem;
+  text-align: center;
+}
+body .product-page #btn-cart {
+  background-color: #BED62f;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 50%;
+}
+body .product-page #btn-cart:hover {
+  background-color: #ffb72b;
+}
+body .product-page .product-title p {
+  font-weight: bold;
+  color: #ffb72b;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+body .product-page .product-dsc p {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+body .product-page .product-price {
+  font-weight: bold;
+  margin: 1rem;
+}
+body .product-page .card a {
+  font-size: 0.8rem;
+}
+body .product-page .card a:link, body .product-page .card .card a:visited {
+  color: #ffb72b;
+}
+body .product-page .card a:hover {
+  color: #BED62f;
 }/*# sourceMappingURL=style.css.map */
