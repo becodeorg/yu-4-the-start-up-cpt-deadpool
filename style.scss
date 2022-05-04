@@ -15,85 +15,9 @@ body {
     text-decoration: none;
 
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
-    background-color: white;
-
-    .logo{  
-        cursor: pointer;
-    }
-
-    .nav__links {
-        list-style: none;
-            
-        li {
-            display: inline;
-            padding: 0px 20px;
-                
-        a {
-            transition: all 0.3 ease 0s;
-            }
-
-            a:hover {
-                color: #BED62F;
-            }
-        }
-    }
 
 
-    button {
-        padding: 9px 25px;
-        background-color: #ffB72B;
-        border: none;
-        border-radius: 50px;
-        cursor: pointer;
-        transition: 0.3;
-    }
-
-        button:hover {
-            background-color: #BED62F;
-        }
-    }
-
-@media only screen and (max-width: 768px) {
-    .nav__links {
-        position: fixed;
-        left: -100%;
-        top: 5rem;
-        flex-direction: column;
-        background-color: #fff;
-        width: 100%;
-        border-radius: 10px;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-        margin: 2.5rem 0;
-    .nav__links.active {
-        left: 0;
-    }    
-    }
-
-    .hamburger {
-        display: block;
-        cursor: pointer;
-    }
-    .hamburger.active .bar:nth-child(2){
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translate(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translate(-8px) rotate(-45deg);
-    }
-}
-
-    
+ 
 
 footer {
     background-color: #bed62f;
