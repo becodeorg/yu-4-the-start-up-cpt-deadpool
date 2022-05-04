@@ -77,16 +77,6 @@ body footer {
     align-items: center;
   }
 }
-@media screen and (min-width: 1500px) {
-  body footer footer {
-    width: 100%;
-  }
-  body footer footer .flex-container {
-    width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 body footer .footer-element {
   min-width: 33%;
   text-align: center;
@@ -123,6 +113,16 @@ body footer #copyright {
   text-align: center;
   font-size: 0.8rem;
   padding: 1rem;
+}
+@media screen and (min-width: 1440px) {
+  body footer {
+    width: 100%;
+  }
+  body .flex-container {
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 body .product-page .flex-container {
   display: flex;
