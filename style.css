@@ -53,11 +53,11 @@ body header button:hover {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 390) {
+@media screen and (max-width: 390px) {
   body header {
     display: flex;
     flex-direction: column;
-    background-color: red;
+    background-color: white;
   }
 }
 body footer {
