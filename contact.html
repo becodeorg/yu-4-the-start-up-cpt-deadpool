@@ -8,6 +8,22 @@
     <link rel="stylesheet" href="https://cdn.tailgrids.com/tailgrids-fallback.css" />
     <link rel="stylesheet" href="style.css">
     <title>Contact</title>
+
+    <style>
+        .hamburger {
+            display: none;
+        }
+
+        .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            -webkit-transition: all 0.3 ease-in-out;
+            transition: all 0.3s ease-in-out;
+            background-color: #FFB72B;
+        }
+    </style>
 </head>
 <body>
 
@@ -15,12 +31,18 @@
         <img class="logo" src="assets/no-bin-snacks-logo.jpg" alt="logo" style="width: auto; height: 70px;">
         <nav>
             <ul class="nav__links">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/product.html">Products</a></li>
-                <li><a href="/about.html">About Us</a></li>
+                <li><a href="/index.html" class="bar-link">Home</a></li>
+                <li><a href="/product.html" class="bar-link">Products</a></li>
+                <li><a href="/about.html" class="bar-link">About Us</a></li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
         <a class="cta" href="tel: 0499 34 10 65"><button><i class="fa fa-phone"></i> Call Us</button></a>
+        
     </header>    
 
 <!-- ====== Contact Section Start -->
