@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product</title>
 
+    <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
@@ -15,11 +17,17 @@
             margin: 0;
             padding: 0;
         }
-        .flex-container {
+
+        /* Products */
+
+        main .flex-container {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            gap: 1rem;
         }
 
         .card {
@@ -29,8 +37,21 @@
             padding-bottom: 1rem;
         }
 
+        @media screen and (min-width: 1500px) {
+            
+            main {
+                width: 100%;
+            }
+            
+            main .flex-container {
+                width: 1400px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
         @media screen and (max-width: 600px) {
-            .flex-container {
+            main .flex-container {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -39,7 +60,6 @@
             .card {
                 max-width: 75%;
             }
-
         }
         
         .product-photo {
@@ -79,9 +99,14 @@
             margin: 1rem;
         }
 
+        .product-dsc p {
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+        }
+
         .product-price {
             font-weight: bold;
-            margin: 0.5rem;
+            margin: 1rem;
         }
 
         .card a {
@@ -101,7 +126,20 @@
 </head>
 
 <body>
-        
+
+    <header>
+        <img class="logo" src="assets/no-bin-snacks-logo.jpg" alt="logo" style="width: auto; height: 70px;">
+        <nav>
+            <ul class="nav__links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/product.html">Products</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#"><button><i class="fa fa-phone"></i> Call Us</button></a>
+    </header> 
+    
+    <main>
         <div class="flex-container">
             <div class="card">
                 <div class="product-photo">
@@ -230,6 +268,28 @@
                 <a href="#">More info</a>
             </div>
         </div>
+    </main>
+
+    <footer>
+        <div class="flex-container">
+            <div class="footer-element">
+                <h4>Important info</h4>
+                <ul>
+                    <li><a href="about.html">Our story</a></li>
+                    <li><a href="contact.html">Get in touch</a></li>
+                </ul>
+            </div>
+            <div class="footer-element">
+                <h4>Our location</h4>
+                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.907044252639!2d3.732777014991713!3d51.03633755285724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c371556f52318f%3A0x5f5246c3223b1ba!2sZuiderpoort!5e0!3m2!1sen!2sde!4v1651495634180!5m2!1sen!2sde" width="200" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="footer-element">
+                <h4>Follow us</h4>
+                <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
