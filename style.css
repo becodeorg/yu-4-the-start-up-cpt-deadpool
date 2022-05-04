@@ -47,17 +47,35 @@ body header button {
 body header button:hover {
   background-color: #BED62F;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   body .nav__links {
-    display: flex;
+    position: fixed;
+    left: -100%;
+    top: 5rem;
     flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    margin: 2.5rem 0;
   }
-}
-@media screen and (max-width: 390px) {
-  body header {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
+  body .nav__links .nav__links.active {
+    left: 0;
+  }
+  body .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  body .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  body .hamburger.active .bar:nth-child(1) {
+    transform: translate(8px) rotate(45deg);
+  }
+  body .hamburger.active .bar:nth-child(3) {
+    transform: translate(-8px) rotate(-45deg);
   }
 }
 body footer {
