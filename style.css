@@ -26,6 +26,32 @@ body {
   background-repeat: no-repeat;
 }
 
+.social-menu {
+  display: flex;
+  flex-direction: row;
+}
+.social-menu #social-btn {
+  background-color: #ffB72B;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+.social-menu #social-btn:hover {
+  background-color: #BED62F;
+  color: #000;
+}
+.social-menu .social-item {
+  margin: 0.8rem;
+}
+
+#submit-btn {
+  background-color: #ffB72B;
+}
+
+#submit-btn:hover {
+  background-color: #BED62F;
+}
+
 .header {
   border-bottom: 1px solid #E2E8F0;
 }
@@ -115,9 +141,6 @@ body {
   .header .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
-  .header .social-item {
-    padding-top: 25px;
-  }
   .header .nav-link {
     font-size: 22px;
     font-weight: 400;
@@ -144,19 +167,6 @@ body {
     background-color: #ffB72B;
   }
   .header #contact-btn:hover {
-    background-color: #BED62F;
-    color: black;
-  }
-  .header #social-btn {
-    width: 8rem;
-    padding: 9px 25px;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: 0.3;
-    background-color: #ffB72B;
-  }
-  .header #social-btn:hover {
     background-color: #BED62F;
     color: black;
   }
