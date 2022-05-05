@@ -1,6 +1,7 @@
+@use 'base.scss' as *;
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oleo+Script&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
-@use 'base.scss';
+
 
 * { 
     box-sizing: border-box;
@@ -14,54 +15,122 @@ body {
     font-size: 16px;
     color: $black;
     text-decoration: none;
+}
 
-    ul {
-        z-index: 99;
-     }
+    #main-page{
+        .parallax {
+            /* The image used */
+            background-image: url("/assets/intro-bg.jpg");
+        
+            /* Set a specific height */
+            min-height: 500px;
+        
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
 
-     li {
-        list-style: none;
-     }
-
-     a {
-        text-decoration: none;
-     }
-
-     .header{
+    .header {
         border-bottom: 1px solid #E2E8F0;
-     }
 
-     .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 1.5rem;
+        ul {
+        z-index: 99;
+        }
+        li {
+        list-style: none;
+        }
+        a {
+        text-decoration: none;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1.5rem;
+        }
+        .hamburger {
+            display: none;
+        }
+        .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            background-color: #101010;
+        }
+        .nav-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-item {
+            margin-left: 5rem;
+        }
+        .nav-link{
+            font-size: 22px;
+            font-weight: 400;
+            color: $black;
+        }
+        .nav-link:hover{
+            color: $yellow-primary;
+        }
+        .nav-logo {
+            font-size: 2.1rem;
+            font-weight: 500;
+            color: $black;
+        }
+        #contact-btn {
+            width: 8rem;
+            padding: 9px 25px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.3;
+            background-color: $yellow-primary;
+        }
+        #contact-btn:hover {
+                background-color: $green-primary;
+                color:$black;
+            }
 
-     }
+        @media only screen and (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 5rem;
+                flex-direction: column;
+                background-color: $white;
+                width: 100%;
+                border-radius: 10px;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow:
+                0 10px 27px rgba(0, 0, 0, 0.05);
+            }
 
-     .hamburger {
-        display: none;
-     }
+            .nav-menu.active {
+                left: 0;
+            }
 
-     .bar {
-        display: block;
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        -webkit-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-        background-color: #101010;
-     }
+            .nav-item {
+                margin: 
+                
+                1rem 0;
+            }
 
-     .nav-menu {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-     }
+            .hamburger {
+                display: block;
+                cursor: pointer;
+        }
 
-     .nav-item {
-        margin-left: 5rem;
-     }
+            .hamburger.active .bar:nth-child(2) {
+                opacity: 0;
+            }
 
      .social-item {
         padding-top: 25px;
@@ -72,10 +141,13 @@ body {
         font-weight: 400;
         color: $black;
      }
+            .hamburger.active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
 
-     .nav-link:hover{
-        color: $yellow-primary;
-     }
+            .hamburger.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
 
      .nav-logo {
         font-size: 2.1rem;
@@ -159,12 +231,13 @@ body {
      }
 
 }
+        }
 
 
-#call-span {
-    color:$yellow-primary;
-}
-
+        #call-span {
+            color:$yellow-primary;
+        }
+    }
  
 
 footer {
@@ -354,7 +427,6 @@ footer {
         }
     }
 
-    /* Image change */
     .image_off, #img-change:hover .image_on{
             display:none
     }
@@ -364,18 +436,3 @@ footer {
 
 }
 
-}
-
-.parallax {
-    /* The image used */
-    background-image: url("/assets/intro-bg.jpg");
-  
-    /* Set a specific height */
-    min-height: 500px;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
