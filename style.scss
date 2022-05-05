@@ -33,6 +33,37 @@ body {
         }
     }
 
+    .social-menu {
+
+        display: flex;
+        flex-direction: row;
+        
+
+        #social-btn {
+            background-color: $yellow-primary;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+        }
+
+        #social-btn:hover {
+            background-color: $green-primary;
+            color: $black;
+        }
+
+        .social-item {
+            margin: 0.8rem;
+        }   
+    }
+
+    #submit-btn {
+        background-color: $yellow-primary;
+    }
+
+    #submit-btn:hover {
+        background-color: $green-primary;
+    }
+
     .header {
         border-bottom: 1px solid #E2E8F0;
 
@@ -84,7 +115,7 @@ body {
             font-weight: 500;
             color: $black;
         }
-        #contact-btn {
+        #contact-btn{
             width: 8rem;
             padding: 9px 25px;
             border: none;
@@ -93,7 +124,7 @@ body {
             transition: 0.3;
             background-color: $yellow-primary;
         }
-        #contact-btn:hover {
+        #contact-btn:hover{
                 background-color: $green-primary;
                 color:$black;
             }
@@ -132,10 +163,6 @@ body {
                 opacity: 0;
             }
 
-     .social-item {
-        padding-top: 25px;
-     }
-
      .nav-link{
         font-size: 22px;
         font-weight: 400;
@@ -169,24 +196,6 @@ body {
         background-color: $green-primary;
         color: black;
      }
-
-    #social-btn {
-        width: 8rem;
-        padding: 9px 25px;
-        border: none;
-        border-radius: 50px;
-        cursor: pointer;
-        transition: 0.3;
-        background-color: $yellow-primary;
-     }
-
-    #social-btn:hover {
-        background-color: $green-primary;
-        color: black;
-     }
-
-    
-
 
 @media only screen and (max-width: 768px) {
      .nav-menu {
