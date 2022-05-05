@@ -56,13 +56,15 @@ body {
         }   
     }
 
-    #submit-btn {
-        background-color: $yellow-primary;
-    }
+    #contact-form {
+        #submit-btn {
+            background-color: $yellow-primary;
+        }
 
-    #submit-btn:hover {
-        background-color: $green-primary;
-    }
+        #submit-btn:hover {
+            background-color: $green-primary;
+        }
+    } 
 
     .header {
         border-bottom: 1px solid #E2E8F0;
@@ -399,7 +401,7 @@ footer {
         a {
             font-size: 0.8rem;
         }
-        a:link, .card a:visited {
+        a:link, a:visited {
         color: $yellow-primary;
         }
         a:hover {
