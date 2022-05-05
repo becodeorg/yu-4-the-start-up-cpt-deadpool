@@ -4,9 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
     <title>About us</title>
 </head>
 <body>
+
+    <header>
+        <img class="logo" src="assets/nobin-snax-logo.jpg" alt="logo" style="width: auto; height: 70px;">
+        <nav>
+            <ul class="nav__links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/product.html">Products</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="tel: 0499 34 10 65"><button><i class="fa fa-phone"></i> Call Us</button></a>
+    </header>    
     
+    <div class="py-20">
+        <div class="container mx-auto px-6 md:px-12 xl:px-32">
+            <div class="mb-16 text-center">
+                <h2 class="mb-4 text-center text-2xl text-gray-900 font-bold md:text-4xl">No Bin Snacks</h2>
+                <p class="text-gray-600 lg:w-9/12 py-2 lg:mx-auto">Still wet behind their ears and without a big start-up capital, the three founders Giovanni, Marthe and Franziska aimed to contribute to the fight against food waste.</p>
+                <p class="text-gray-600 lg:w-9/12 py-2 lg:mx-auto">Sustainable management is a central topic at No Bin Snacks - and one of our greatest challenges. Our goal for the future? Being more sustainable, ecological and smarter than the regular trade!</p>
+                <p class="text-gray-600 lg:w-9/12 py-2 lg:mx-auto">Our aim is to save second quality, dented, wilted or dried foods from the bin, and prepare delicious and healthy snacks. 
+                    We collaborate with local farmers, food markets, grocery stores and restaurants. Call us to join!</p>
+                <p class="text-gray-600 lg:w-9/12 py-2 lg:mx-auto">Our product range depends on available food waste. For that reason are our prices also not set in stone. That's why we regularly adjust them and communicate these changes - transparently and understandably.</p>
+                <p class="text-gray-600 lg:w-9/12 py-2 lg:mx-auto">We all have one thing in common: we love the products we sell and do everything we can to ensure that you love our products too.</p>
+            </div>
+            <div class="grid gap-12 items-center md:grid-cols-3 pb-20">
+                <div class="space-y-4 text-center">
+                    <img class="w-64 h-64 mx-auto object-cover rounded-xl md:w-48 md:h-64 lg:w-64 lg:h-64 hover:shadow-xl" 
+                        src="https://tailus.io/sources/blocks/classic/preview/images/woman1.jpg" alt="woman" loading="lazy" width="640" height="805">
+                    <div>
+                        <h4 class="text-2xl">Franziska</h4>
+                        <span class="block text-sm text-gray-500">CEO-Founder</span>
+                    </div>
+                </div>
+                <div class="space-y-4 text-center">
+                    <img class="w-64 h-64 mx-auto object-cover rounded-xl md:w-48 md:h-64 lg:w-64 lg:h-64 hover:shadow-xl" 
+                        src="https://tailus.io/sources/blocks/classic/preview/images/man.jpg" alt="man" loading="lazy" width="1000" height="667">
+                    <div>
+                        <h4 class="text-2xl">Giovanni</h4>
+                        <span class="block text-sm text-gray-500">Chief Technical Officer</span>
+                    </div>
+                </div>
+                <div class="space-y-4 text-center">
+                    <img class="w-64 h-64 mx-auto object-cover rounded-xl md:w-40 md:h-40 lg:w-64 lg:h-64 hover:shadow-xl" 
+                        src="https://tailus.io/sources/blocks/classic/preview/images/woman.jpg" alt="woman" loading="lazy" width="1000" height="667">
+                    <div>
+                        <h4 class="text-2xl">Marthe</h4>
+                        <span class="block text-sm text-gray-500">Chief Operations Officer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="flex-container">
+            <div class="footer-element">
+                <h4>Important info</h4>
+                <ul>
+                    <li><a href="about.html">Our story</a></li>
+                    <li><a href="contact.html">Get in touch</a></li>
+                </ul>
+            </div>
+            <div class="footer-element">
+                <h4>Our location</h4>
+                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.907044252639!2d3.732777014991713!3d51.03633755285724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c371556f52318f%3A0x5f5246c3223b1ba!2sZuiderpoort!5e0!3m2!1sen!2sde!4v1651495634180!5m2!1sen!2sde" width="200" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="footer-element">
+                <h4>Follow us</h4>
+                <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+            </div>
+        </div>
+        <p id="copyright">&copy; 2022 No Bin Snacks</p>
+    </footer>
+
 </body>
 </html>

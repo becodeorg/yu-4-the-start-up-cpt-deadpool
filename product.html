@@ -4,189 +4,236 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
+    <title>Product</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <style>
-
-        body {
-            box-sizing: border-box;
-            font-family: 'Montserrat', sans-serif;
-            width: 100%;
-        }
-
-        /* Tiles */
-
-        .container {
-            margin: 2rem;
-        }
-
-        .card {
-            border: none;
-            margin: 2rem;
-            width: 100%;
-        }
-
-        .grid {
-            max-width: 100%;
-        }
-        .grid img {
-            height: 15rem;
-            object-fit: cover;
-            border-radius: 0;
-        }
-        .grid .card-body h3 {
-            font-weight: bold;
-            color: #ffb72b;
-        }
-        .grid .card-body {
-            background-color: white;
-        }
-
-        .wrap {
-            display: flex;
-        }
-        #mass {
-            margin-left: 6rem;
-        }
-        #price {
-            margin-left: 4.5rem;
-        }
-
-        #btn-cart {
-            width: 12rem;
-            background-color: #BED62f;
-            color: white;
-            border: none;
-            padding: 0.3rem;
-            border-radius: 0.25rem;
-        }
-
-        #btn-cart:hover {
-            background-color: #ffb72b;
-        }
-
-        a:link, a:visited {
-            color: #ffb72b;
-        }
-
-        a:hover {
-            color: #BED62f;
-        }
+    
+    /* Image change */
+    .image_off, #img-change:hover .image_on{
+            display:none
+    }
+    .image_on, #img-change:hover .image_off{
+        display:block
+    }
 
     </style>
 
 </head>
+
 <body>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 text-center grid">
+    <header>
+        <img class="logo" src="assets/nobin-snax-logo.jpg" alt="logo" style="width: auto; height: 70px;">
+        <nav>
+            <ul class="nav__links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About us</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#"><button><i class="fa fa-phone"></i> Call Us</button></a>
+    </header> 
+    
+    <main>
+        <div class="product-page">
+            <div class="flex-container">
                 <div class="card">
-                    <img src="assets/energy-balls.jpg" class="card-img-top" alt="energy-balls">
-                    <div class="card-body p-0 pt-4">
-                        <h3 class="card-title">Energy balls</h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
-                        <div class="wrap">
-                            <p id="mass">5 balls</p>
-                            <p id="price">3.99 €</p>
-                        </div>
-                        <div class="mb-3">
-                            <button id="btn-cart" type="button">Add to cart</button>
-                        </div>
-                        <a href="#">More info</a>
+                    <div class="product-photo">
+                        <div><button id="btn-cart" type="button" class="fa fa-shopping-cart"></button></div>
+                        <a id="img-change"><img class="image_on" src="assets/energy-balls.jpg" alt="energy-balls" /><img class="image_off" src="assets/dates.jpg" alt="dates" /></a>
                     </div>
+                    <div class="product-title">
+                        <p>Energy balls</p>
+                    </div>
+                    <div class="product-dsc">
+                        <p>Dates, apples, oats & a hint of cinnamon</p>
+                    </div>
+                    <div class="product-price">1.49 €<span> - 2 balls</span></div>
+                    <a href="#">More info</a>
                 </div>
-            </div>
-            <div class="col-md-4 text-center grid">
                 <div class="card">
-                    <img src="assets/coconut-balls.jpg" class="card-img-top" alt="energy-balls">
-                    <div class="card-body p-0 pt-4">
-                        <h3 class="card-title">Coconut balls</h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
-                        <div class="wrap">
-                            <p id="mass">5 balls</p>
-                            <p id="price">3.99 €</p>
-                        </div>
-                        <div class="mb-3">
-                            <button id="btn-cart" type="button">Add to cart</button>
-                        </div>
-                        <a href="#">More info</a>
+                    <div class="product-photo">
+                        <div><button id="btn-cart" type="button" class="fa fa-shopping-cart"></button></div>
+                        <a id="img-change"><img class="image_on" src="assets/coconut-balls.jpg" alt="coconut-energy-balls" /><img class="image_off" src="assets/dried-coconut.jpg" alt="dried-coconut" /></a>
                     </div>
+                    <div class="product-title">
+                        <p>Coconut balls</p>
+                    </div>
+                    <div class="product-dsc">
+                        <p>Dates, apples & oats covered in coconut shreds</p>
+                    </div>
+                    <div class="product-price">1.49 €<span> - 2 balls</span></div>
+                    <a href="#">More info</a>
                 </div>
-            </div>
-            <div class="col-md-4 text-center grid">
                 <div class="card">
-                    <img src="assets/fruit-leather.jpg" class="card-img-top" alt="energy-balls">
-                    <div class="card-body p-0 pt-4">
-                        <h3 class="card-title">Fruit rolls</h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
-                        <div class="wrap">
-                            <p id="mass">5 rolls</p>
-                            <p id="price">3.49 €</p>
-                        </div>
-                        <div class="mb-3">
-                            <button id="btn-cart" type="button">Add to cart</button>
-                        </div>
-                        <a href="#">More info</a>
+                    <div class="product-photo">
+                        <div><button id="btn-cart" type="button" class="fa fa-shopping-cart"></button></div>
+                        <a id="img-change"><img class="image_on" src="assets/dried-apples.jpg" alt="dried-apples" /><img class="image_off" src="assets/old-apples.jpg" alt="old-apples" /></a>
                     </div>
+                    <div class="product-title">
+                        <p>Dried apples</p>
+                    </div>
+                    <div class="product-dsc">
+                        <p>Dehydrated apples slice, unsulphured</p>
+                    </div>
+                    <div class="product-price">1.99 €<span> - 200 g</span></div>
+                    <a href="#">More info</a>
                 </div>
-            </div>
-            <div class="w-100"></div>
-            <div class="col-md-4 text-center grid">
                 <div class="card">
-                    <img src="assets/dried-apples.jpg" class="card-img-top" alt="energy-balls">
-                    <div class="card-body p-0 pt-4">
-                        <h3 class="card-title">Dried apple slice</h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
-                        <div class="wrap">
-                            <p id="mass">200 g</p>
-                            <p id="price">1.99 €</p>
-                        </div>
-                        <div class="mb-3">
-                            <button id="btn-cart" type="button">Add to cart</button>
-                        </div>
-                        <a href="#">More info</a>
+                    <div class="product-photo">
+                        <div><button id="btn-cart" type="button" class="fa fa-shopping-cart"></button></div>
+                        <a id="img-change"><img class="image_on" src="assets/fruit-leather.jpg" alt="fruit-rolls" /><img class="image_off" src="assets/strawberry.jpg" alt="strawberry" /></a>
                     </div>
+                    <div class="product-title">
+                        <p>Fruit rolls</p>
+                    </div>
+                    <div class="product-dsc">
+                        <p>Chewy dehydrated fruit mix</p>
+                    </div>
+                    <div class="product-price">3.49 €<span> - 5 rolls</span></div>
+                    <a href="#">More info</a>
                 </div>
-            </div>
-            <div class="col-md-4 text-center grid">
                 <div class="card">
-                    <img src="assets/dried-tomatoes.jpg" class="card-img-top" alt="energy-balls">
-                    <div class="card-body p-0 pt-4">
-                        <h3 class="card-title">Sundried tomatoes</h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
-                        <div class="wrap">
-                            <p id="mass">200 g</p>
-                            <p id="price">2.99 €</p>
-                        </div>
-                        <div class="mb-3">
-                            <button id="btn-cart" type="button">Add to cart</button>
-                        </div>
-                        <a href="#">More info</a>
+                    <div class="product-photo">
+                        <div><button id="btn-cart" type="button" class="fa fa-shopping-cart"></button></div>
+                        <a id="img-change"><img class="image_on" src="assets/banana-chips.jpg" alt="banana-chips" /><img class="image_off" src="assets/old-bananas.jpg" alt="old-bananas" /></a>
                     </div>
+                    <div class="product-title">
+                        <p>Banana chips</p>
+                    </div>
+                    <div class="product-dsc">
+                        <p>Fried in coconut oil, no sugar/salt added</p>
+                    </div>
+                    <div class="product-price">2.99 €<span> - 300 g</span></div>
+                    <a href="#">More info</a>
                 </div>
-            </div>
-            <div class="col-md-4 text-center grid">
                 <div class="card">
-                    <img src="assets/dried-courgette.jpg" class="card-img-top" alt="energy-balls">
-                    <div class="card-body p-0 pt-4">
-                        <h3 class="card-title">Dried courgette slices</h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
-                        <div class="wrap">
-                            <p id="mass">200 g</p>
-                            <p id="price">2.49 €</p>
-                        </div>
-                        <div class="mb-3">
-                            <button id="btn-cart" type="button">Add to cart</button>
-                        </div>
-                        <a href="#">More info</a>
+                    <div class="product-photo">
+                        <div><button id="btn-cart" type="button" class="fa fa-shopping-cart"></button></div>
+                        <a id="img-change"><img class="image_on" src="assets/veggie-crisps.jpg" alt="veggie-crisps" /><img class="image_off" src="assets/root-veggies.jpg" alt="root-vegetables" /></a>
                     </div>
+                    <div class="product-title">
+                        <p>Veggie chips</p>
+                    </div>
+                    <div class="product-dsc">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="product-price">2.99 €<span> - 200 g</span></div>
+                    <a href="#">More info</a>
+                </div> 
+                <div class="card">
+                    <div class="product-photo">
+                        <div><button id="btn-cart" type="button" class="fa fa-shopping-cart"></button></div>
+                        <a id="img-change"><img class="image_on" src="assets/bread-chips.jpg" alt="bread-chips" /><img class="image_off" src="assets/old-bread.jpg" alt="old-bread" /></a>
+                    </div>
+                    <div class="product-title">
+                        <p>Bread chips</p>
+                    </div>
+                    <div class="product-dsc">
+                        <p>Ovenbaked bread chips with salt</p>
+                    </div>
+                    <div class="product-price">2.99 €<span> - 350 g</span></div>
+                    <a href="#">More info</a>
+                </div>
+                <div class="card">
+                    <div class="product-photo">
+                        <div><button id="btn-cart" type="button" class="fa fa-shopping-cart"></button></div>
+                        <a id="img-change"><img class="image_on" src="assets/veggie-spread.jpg" alt="veggie-spread" /><img class="image_off" src="assets/old-eggplant.jpg" alt="old-eggplant" /></a>
+                    </div>
+                    <div class="product-title">
+                        <p>Veggie spread</p>
+                    </div>
+                    <div class="product-dsc">
+                        <p>Chickpeas & eggplant</p>
+                    </div>
+                    <div class="product-price">2.99 €<span> - 100 g</span></div>
+                    <a href="#">More info</a>
+                </div>
+                <div class="card">
+                    <div class="product-photo">
+                        <div><button id="btn-cart" type="button" class="fa fa-shopping-cart"></button></div>
+                        <a id="img-change"><img class="image_on" src="assets/tomato-chutney.jpg" alt="tomato-chutney" /><img class="image_off" src="assets/old-tomato.jpg" alt="old-tomato" /></a>
+                    </div>
+                    <div class="product-title">
+                        <p>Tomato chutney</p>
+                    </div>
+                    <div class="product-dsc">
+                        <p>Tomato chutney with onion & garlic</p>
+                    </div>
+                    <div class="product-price">2.99 €<span> - 250 g</span></div>
+                    <a href="#">More info</a>
+                </div>
+                <div class="card">
+                    <div class="product-photo">
+                        <div><button id="btn-cart" type="button" class="fa fa-shopping-cart"></button></div>
+                        <a id="img-change"><img class="image_on" src="assets/pickled-veggies.jpg" alt="pickled-veggies" /><img class="image_off" src="assets/old-carrots.jpg" alt="old-carrots" /></a>
+                    </div>
+                    <div class="product-title">
+                        <p>Pickled veggies</p>
+                    </div>
+                    <div class="product-dsc">
+                        <p>Pickled carrots & cucumbers</p>
+                    </div>
+                    <div class="product-price">2.99 €<span> - 250 g</span></div>
+                    <a href="#">More info</a>
+                </div>
+                <div class="card">
+                    <div class="product-photo">
+                        <div><button id="btn-cart" type="button" class="fa fa-shopping-cart"></button></div>
+                        <a id="img-change"><img class="image_on" src="assets/forestberry-jam.jpg" alt="forestberry-jam" /><img class="image_off" src="assets/berries.jpg" alt="forest-berries" /></a>
+                    </div>
+                    <div class="product-title">
+                        <p>Forest berry jam</p>
+                    </div>
+                    <div class="product-dsc">
+                        <p>Vegan blackberry & raspberry jam</p>
+                    </div>
+                    <div class="product-price">2.99 €<span> - 250 g</span></div>
+                    <a href="#">More info</a>
+                </div>
+                <div class="card">
+                    <div class="product-photo">
+                        <div><button id="btn-cart" type="button" class="fa fa-shopping-cart"></button></div>
+                        <a id="img-change"><img class="image_on" src="assets/marmelade.jpg" alt="marmelade" /><img class="image_off" src="assets/old-orange.jpg" alt="old-orange" /></a>
+                    </div>
+                    <div class="product-title">
+                        <p>Citrus jam</p>
+                    </div>
+                    <div class="product-dsc">
+                        <p>Vegan orange & lemon jam</p>
+                    </div>
+                    <div class="product-price">2.99 €<span> - 250 g</span></div>
+                    <a href="#">More info</a>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
+
+    <footer>
+        <div class="flex-container">
+            <div class="footer-element">
+                <h4>Important info</h4>
+                <ul>
+                    <li><a href="about.html">Our story</a></li>
+                    <li><a href="contact.html">Get in touch</a></li>
+                </ul>
+            </div>
+            <div class="footer-element">
+                <h4>Our location</h4>
+                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.907044252639!2d3.732777014991713!3d51.03633755285724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c371556f52318f%3A0x5f5246c3223b1ba!2sZuiderpoort!5e0!3m2!1sen!2sde!4v1651495634180!5m2!1sen!2sde" width="200" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="footer-element">
+                <h4>Follow us</h4>
+                <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+            </div>
+        </div>
+        <p id="copyright">&copy; 2022 No Bin Snacks</p>
+    </footer>
 
 </body>
 </html>

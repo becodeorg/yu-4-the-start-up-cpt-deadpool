@@ -15,48 +15,9 @@ body {
     text-decoration: none;
 
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
-    background-color: white;
 
-    .logo{  
-        cursor: pointer;
-    }
 
-    .nav__links {
-        list-style: none;
-            
-        li {
-            display: inline;
-            padding: 0px 20px;
-                
-        a {
-            transition: all 0.3 ease 0s;
-            }
-
-            a:hover {
-                color: #BED62F;
-            }
-        }
-    }
-
-    button {
-        padding: 9px 25px;
-        background-color: #ffB72B;
-        border: none;
-        border-radius: 50px;
-        cursor: pointer;
-        transition: 0.3;
-    }
-
-        button:hover {
-            background-color: #BED62F;
-        }
-    }
-  
+ 
 
 footer {
     background-color: #bed62f;
@@ -80,6 +41,7 @@ footer {
     .footer-element {
         min-width: 33%;
         text-align: center;
+        margin-top: 0.5rem;
 
         h4 {
         font-weight: bold;
@@ -114,5 +76,147 @@ footer {
         margin-bottom: 2.5rem;
         }
     }
+
+    #copyright {
+        text-align: center;
+        font-size: 0.8rem;
+        padding: 1rem;
+    }
+    
 }
+
+@media screen and (min-width: 1440px) {
+            
+    footer {
+        width: 100%;
+    }
+    
+    .flex-container {
+        width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
+
+.product-page {
+    .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    gap: 1rem;
+    }
+
+    .card {
+        max-width: 33%;
+        margin: 0.5rem;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .product-photo {
+        position: relative;
+
+        img {
+        width: 300px;
+        height: 15rem;
+        object-fit: cover;
+        border-radius: 0.5rem;
+        }
+
+        div {
+            position: absolute;
+            bottom: -1rem;
+            right: 1rem;
+            text-align: center;
+       }
+    }
+
+    #btn-cart {
+        background-color: #BED62f;
+        color: white;
+        border: none;
+        padding: 0.8rem;
+        border-radius: 50%;
+    }
+
+    #btn-cart:hover {
+        background-color: #ffb72b;
+    }
+
+    .product-title p {
+        font-weight: bold;
+        color: #ffb72b;
+        font-size: 1.5rem;
+        margin: 1rem;
+    }
+
+    .product-dsc p {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .product-price {
+        font-weight: bold;
+        margin: 1rem;
+    }
+
+    .card {
+        a {
+            font-size: 0.8rem;
+        }
+        a:link, .card a:visited {
+        color: #ffb72b;
+        }
+        a:hover {
+        color: #BED62f;
+        }
+    }
+
+    @media screen and (min-width: 1500px) {
+        
+        width: 100%;
+                
+        .flex-container {
+            width: 1400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card {
+            max-width: 75%;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .product-photo img{
+            width: 250px;
+        }
+    }
+}
+
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("img_parallax.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
