@@ -15,6 +15,10 @@ body {
     font-size: 16px;
     color: $black;
     text-decoration: none;
+
+    #call-span {
+        color:$yellow-primary;
+    }
 }
 
     #main-page{
@@ -244,10 +248,6 @@ body {
 }
         }
 
-
-        #call-span {
-            color:$yellow-primary;
-        }
     }
  
 
