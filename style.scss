@@ -205,6 +205,15 @@ footer {
             width: 250px;
         }
     }
+
+    /* Image change */
+    .image_off, #img-change:hover .image_on{
+            display:none
+    }
+    .image_on, #img-change:hover .image_off{
+        display:block
+    }
+
 }
 
 }

@@ -79,6 +79,9 @@ body footer #copyright {
     margin-right: auto;
   }
 }
+body .product-page {
+  /* Image change */
+}
 body .product-page .flex-container {
   display: flex;
   flex-direction: row;
@@ -167,6 +170,12 @@ body .product-page .card a:hover {
   body .product-page .product-photo img {
     width: 250px;
   }
+}
+body .product-page .image_off, body .product-page #img-change:hover .image_on {
+  display: none;
+}
+body .product-page .image_on, body .product-page #img-change:hover .image_off {
+  display: block;
 }
 
 .parallax {
