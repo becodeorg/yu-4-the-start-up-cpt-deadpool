@@ -109,6 +109,9 @@ body #contact-btn:hover {
     transform: translateY(-8px) rotate(-45deg);
   }
 }
+body #call-span {
+  color: #ffb72b;
+}
 body footer {
   background-color: #ffb72b;
 }
