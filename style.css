@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oleo+Script&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+/* COLOURS */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,31 +11,43 @@ body {
   font-family: "montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  color: black;
+  color: #000;
   text-decoration: none;
 }
-body ul {
-  z-index: 99;
+
+#main-page .parallax {
+  /* The image used */
+  background-image: url("/assets/intro-bg.jpg");
+  /* Set a specific height */
+  min-height: 800px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-body li {
-  list-style: none;
-}
-body a {
-  text-decoration: none;
-}
-body .header {
+
+.header {
   border-bottom: 1px solid #E2E8F0;
 }
-body .navbar {
+.header ul {
+  z-index: 99;
+}
+.header li {
+  list-style: none;
+}
+.header a {
+  text-decoration: none;
+}
+.header .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
 }
-body .hamburger {
+.header .hamburger {
   display: none;
 }
-body .bar {
+.header .bar {
   display: block;
   width: 25px;
   height: 3px;
@@ -42,28 +55,28 @@ body .bar {
   transition: all 0.3s ease-in-out;
   background-color: #101010;
 }
-body .nav-menu {
+.header .nav-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-body .nav-item {
+.header .nav-item {
   margin-left: 5rem;
 }
-body .nav-link {
+.header .nav-link {
   font-size: 22px;
   font-weight: 400;
-  color: black;
+  color: #000;
 }
-body .nav-link:hover {
+.header .nav-link:hover {
   color: #ffB72B;
 }
-body .nav-logo {
+.header .nav-logo {
   font-size: 2.1rem;
   font-weight: 500;
-  color: black;
+  color: #000;
 }
-body #contact-btn {
+.header #contact-btn {
   width: 8rem;
   padding: 9px 25px;
   border: none;
@@ -72,12 +85,12 @@ body #contact-btn {
   transition: 0.3;
   background-color: #ffB72B;
 }
-body #contact-btn:hover {
+.header #contact-btn:hover {
   background-color: #BED62F;
-  color: black;
+  color: #000;
 }
 @media only screen and (max-width: 768px) {
-  body .nav-menu {
+  .header .nav-menu {
     position: fixed;
     left: -100%;
     top: 5rem;
@@ -89,99 +102,171 @@ body #contact-btn:hover {
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
-  body .nav-menu.active {
+  .header .nav-menu.active {
     left: 0;
   }
-  body .nav-item {
+  .header .nav-item {
     margin: 1rem 0;
   }
-  body .hamburger {
+  .header .hamburger {
     display: block;
     cursor: pointer;
   }
-  body .hamburger.active .bar:nth-child(2) {
+  .header .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
-  body .hamburger.active .bar:nth-child(1) {
+  .header .social-item {
+    padding-top: 25px;
+  }
+  .header .nav-link {
+    font-size: 22px;
+    font-weight: 400;
+    color: #000;
+  }
+  .header .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
-  body .hamburger.active .bar:nth-child(3) {
+  .header .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .header .nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: black;
+  }
+  .header #contact-btn {
+    width: 8rem;
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3;
+    background-color: #ffB72B;
+  }
+  .header #contact-btn:hover {
+    background-color: #BED62F;
+    color: black;
+  }
+  .header #social-btn {
+    width: 8rem;
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3;
+    background-color: #ffB72B;
+  }
+  .header #social-btn:hover {
+    background-color: #BED62F;
+    color: black;
+  }
+}
+@media only screen and (max-width: 768px) and (max-width: 768px) {
+  .header .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+  .header .nav-menu.active {
+    left: 0;
+  }
+  .header .nav-item {
+    margin: 1rem 0;
+  }
+  .header .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .header .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .header .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .header .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
 }
-body #call-span {
-  color: #ffb72b;
+.header #call-span {
+  color: #ffB72B;
 }
-body footer {
-  background-color: #ffb72b;
+
+footer {
+  background-color: #ffB72B;
 }
 @media screen and (min-width: 768px) {
-  body footer .flex-container {
+  footer .flex-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
 }
 @media screen and (max-width: 768px) {
-  body footer .flex-container {
+  footer .flex-container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
-body footer .footer-element {
+footer .footer-element {
   min-width: 33%;
   text-align: center;
   margin-top: 0.5rem;
 }
-body footer .footer-element h4 {
+footer .footer-element h4 {
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  color: white;
+  color: #fff;
 }
-body footer .footer-element a {
+footer .footer-element a {
   text-decoration: none;
-  color: white;
+  color: #fff;
 }
-body footer .footer-element a:hover {
-  color: black;
+footer .footer-element a:hover {
+  color: #000;
   text-decoration: none;
 }
-body footer .footer-element ul {
+footer .footer-element ul {
   list-style: none;
   padding: 0.5rem;
 }
-body footer .footer-element #map {
+footer .footer-element #map {
   display: inline-block;
 }
-body footer .footer-element .fa {
+footer .footer-element .fa {
   padding: 0.5rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   margin-bottom: 2.5rem;
 }
-body footer #copyright {
+footer #copyright {
   text-align: center;
   font-size: 0.8rem;
   padding: 1rem;
-  color: white;
+  color: #fff;
 }
+
 @media screen and (min-width: 1440px) {
-  body footer {
+  footer {
     width: 100%;
   }
-  body .flex-container {
+
+  .flex-container {
     width: 1400px;
     margin-left: auto;
     margin-right: auto;
   }
 }
-body .product-page {
-  /* Image change */
-}
-body .product-page .flex-container {
+.product-page .flex-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -190,101 +275,89 @@ body .product-page .flex-container {
   margin-bottom: 1rem;
   gap: 1rem;
 }
-body .product-page .card {
+.product-page .card {
   max-width: 33%;
   margin: 0.5rem;
   text-align: center;
   padding-bottom: 1rem;
 }
-body .product-page .product-photo {
+.product-page .product-photo {
   position: relative;
 }
-body .product-page .product-photo img {
+.product-page .product-photo img {
   width: 300px;
   height: 15rem;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 0.5rem;
 }
-body .product-page .product-photo div {
+.product-page .product-photo div {
   position: absolute;
   bottom: -1rem;
   right: 1rem;
   text-align: center;
 }
-body .product-page #btn-cart {
-  background-color: #BED62f;
-  color: white;
+.product-page #btn-cart {
+  background-color: #BED62F;
+  color: #fff;
   border: none;
   padding: 0.8rem;
   border-radius: 50%;
 }
-body .product-page #btn-cart:hover {
-  background-color: #ffb72b;
+.product-page #btn-cart:hover {
+  background-color: #ffB72B;
 }
-body .product-page .product-title p {
+.product-page .product-title p {
   font-weight: bold;
-  color: #ffb72b;
+  color: #ffB72B;
   font-size: 1.5rem;
   margin: 1rem;
 }
-body .product-page .product-dsc p {
+.product-page .product-dsc p {
   font-size: 0.8rem;
   margin-bottom: 1rem;
 }
-body .product-page .product-price {
+.product-page .product-price {
   font-weight: bold;
   margin: 1rem;
 }
-body .product-page .card a {
+.product-page .card a {
   font-size: 0.8rem;
 }
-body .product-page .card a:link, body .product-page .card .card a:visited {
-  color: #ffb72b;
+.product-page .card a:link, .product-page .card .card a:visited {
+  color: #ffB72B;
 }
-body .product-page .card a:hover {
-  color: #BED62f;
+.product-page .card a:hover {
+  color: #BED62F;
 }
 @media screen and (min-width: 1500px) {
-  body .product-page {
+  .product-page {
     width: 100%;
   }
-  body .product-page .flex-container {
+  .product-page .flex-container {
     width: 1400px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media screen and (max-width: 600px) {
-  body .product-page .flex-container {
+  .product-page .flex-container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  body .product-page .card {
+  .product-page .card {
     max-width: 75%;
   }
 }
 @media screen and (max-width: 768px) {
-  body .product-page .product-photo img {
+  .product-page .product-photo img {
     width: 250px;
   }
 }
-body .product-page .image_off, body .product-page #img-change:hover .image_on {
+.product-page .image_off, .product-page #img-change:hover .image_on {
   display: none;
 }
-body .product-page .image_on, body .product-page #img-change:hover .image_off {
+.product-page .image_on, .product-page #img-change:hover .image_off {
   display: block;
-}
-
-.parallax {
-  /* The image used */
-  background-image: url("img_parallax.jpg");
-  /* Set a specific height */
-  min-height: 500px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }/*# sourceMappingURL=style.css.map */
