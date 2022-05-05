@@ -44,11 +44,10 @@ body {
   margin: 0.8rem;
 }
 
-#submit-btn {
+#contact-form #submit-btn {
   background-color: #ffB72B;
 }
-
-#submit-btn:hover {
+#contact-form #submit-btn:hover {
   background-color: #BED62F;
 }
 
@@ -334,7 +333,7 @@ footer #copyright {
 .product-page .card a {
   font-size: 0.8rem;
 }
-.product-page .card a:link, .product-page .card .card a:visited {
+.product-page .card a:link, .product-page .card a:visited {
   color: #ffB72B;
 }
 .product-page .card a:hover {
